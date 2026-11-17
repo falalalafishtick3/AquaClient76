@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "aquaclient",
+  "version": "${version}",
+  "name": "Aqua Client",
+  "description": "A clean Fabric utility client with configurable storage and spawner highlighting.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.aqua.client.AquaClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

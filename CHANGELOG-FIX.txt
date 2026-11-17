@@ -1,0 +1,12 @@
+Aqua Client source update
+
+- Reworked the ClickGUI into a compact four-column layout inspired by the supplied reference image.
+- Removed the screen background blur call and use a dark overlay to avoid the reported 1.21.11 duplicate-blur crash.
+- Implemented client-side scanning of already-loaded chunks for chests, trapped/ender chests, barrels, droppers, dispensers, shulker boxes, and spawners.
+- Implemented visible block-outline rendering with independent StorageFinder and SpawnerFinder enable/range/color/outline-opacity settings.
+- Limited scanning to a 64-block horizontal radius and a 24-block vertical band around the player; rescans twice per second.
+
+Important limitations:
+- This is source code, not a compiled/tested JAR.
+- The current renderer draws outlines. Fill rendering, tracers, through-wall rendering, line thickness, and pulse are still UI/config options but are not implemented by this renderer yet.
+- Build and in-game testing are still required against the exact Minecraft/Fabric installation.
